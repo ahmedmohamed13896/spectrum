@@ -1,0 +1,662 @@
+:root {
+  --yellow: #ffd21b;
+  --orange: #f58a28;
+  --red: #ed3f36;
+  --fuchsia: #ed3d89;
+  --purple: #941b81;
+  --white: #ffffff;
+  --blue: #1998d5;
+  --deepblue: #1998d5;
+  --mintGreen: #3bd1c6;
+  --yellowGreen: #a5cf4c;
+  --mainColor: #000066;
+}
+
+body {
+  position: relative;
+  background-color: var(--mainColor);
+  min-height: 100vh;
+  font-family: "GE Inspira Book";
+  font-weight: normal;
+  padding-bottom: 56px;
+}
+a {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+.min-h-100 {
+  min-height: 100vh;
+}
+section {
+  overflow: hidden;
+}
+
+.bg-yellow {
+  background-color: var(--yellow);
+}
+.bg-orange {
+  background-color: var(--orange);
+}
+.bg-red {
+  background-color: var(--red);
+}
+.bg-fuchsia {
+  background-color: var(--fuchsia);
+}
+.bg-purple {
+  background-color: var(--purple);
+}
+.bg-blue {
+  background-color: var(--blue);
+}
+.bg-mintGreen {
+  background-color: var(--mintGreen);
+}
+.bg-yellowGreen {
+  background-color: var(--yellowGreen);
+}
+h2.sec-title {
+  color: var(--yellow);
+  font-size: 3rem;
+  font-weight: bold;
+}
+.right-div li a {
+  color: var(--white) !important;
+  text-decoration: none;
+  font-size: 1.2rem;
+  line-height: 1.3;
+  display: flex;
+}
+.right-div li a span {
+  display: inline-flex;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 1.3rem;
+  margin-right: 0.5rem;
+}
+
+/* Home */
+.home .logo {
+  width: 384px;
+  max-width: 80%;
+}
+.home h4 {
+  color: var(--yellow);
+  font-weight: bold;
+}
+.home h1 {
+  color: var(--orange);
+  position: relative;
+  font-weight: bold;
+}
+.home h1::after,
+.home h1::before {
+  content: "";
+  width: 191px;
+  max-width: 50%;
+  height: 1px;
+  background-color: var(--fuchsia);
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+.home h1::after {
+  top: 0;
+}
+.home h1::before {
+  bottom: 0;
+}
+.home p {
+  color: var(--white);
+  max-width: 725px;
+  font-size: 1.3rem;
+}
+
+/* Our Services */
+
+.our-services .right-div p {
+  color: var(--deepblue);
+  position: relative;
+  font-size: 1.3rem;
+  line-height: 1.3;
+  max-width: 440px;
+}
+.our-services .right-div p::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100px;
+  height: 1px;
+  background-color: var(--deepblue);
+}
+
+.our-services .carousel-control-next {
+  justify-content: flex-end;
+  border-top-left-radius: 150px;
+  border-bottom-left-radius: 150px;
+}
+.our-services .carousel-control-prev {
+  justify-content: flex-start;
+  border-top-right-radius: 150px;
+  border-bottom-right-radius: 150px;
+}
+.our-services .carousel .carousel-item > div {
+  min-height: 100vh;
+  padding-bottom: 56px;
+}
+
+.our-services .carousel .carousel-item h3 {
+  display: none;
+  max-width: 245px;
+  font-size: 2.5rem;
+  line-height: 1;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.our-services .carousel .carousel-item p {
+  display: none;
+  margin-top: auto;
+  margin-bottom: auto;
+  width: calc(70% - 3rem);
+  color: var(--white);
+  padding: 2rem 5rem;
+  min-height: 200px;
+  border-radius: 150px;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  font-size: 1.3rem;
+}
+
+.our-services .carousel .carousel-item img {
+  display: none;
+  margin-top: auto;
+  width: 50%;
+  max-width: 550px;
+  margin-right: auto;
+  margin-left: auto;
+  object-fit: contain;
+  max-height: 200px;
+}
+
+.our-services .carousel .carousel-item.active h3,
+.our-services .carousel .carousel-item.active p,
+.our-services .carousel .carousel-item.active img {
+  display: flex;
+}
+.our-services .carousel-control-next,
+.our-services .carousel-control-prev {
+  height: fit-content;
+  min-height: 150px;
+  margin-top: auto;
+  margin-bottom: auto;
+  padding: 1rem;
+  opacity: 1;
+  transform: translateY(-56px);
+}
+
+/* item 1 */
+.our-services .carousel-inner.active-1 .carousel-control-next {
+  background-color: var(--orange);
+  border: 2px solid var(--orange);
+}
+
+.our-services .carousel-inner.active-1 .carousel-control-prev {
+  border: 2px solid var(--yellowGreen);
+  border-left: 0;
+  background-color: transparent;
+}
+.our-services .carousel .item-1 h3 {
+  color: var(--yellow);
+  text-align: right;
+}
+.our-services .carousel .item-1 p {
+  background-color: var(--yellow);
+  color: var(--mainColor);
+}
+/* item 2 */
+.our-services .carousel-inner.active-2 .carousel-control-next {
+  background-color: transparent;
+  border: 2px solid var(--red);
+  border-right: 0;
+}
+
+.our-services .carousel-inner.active-2 .carousel-control-prev {
+  border: 2px solid transparent;
+  background-color: var(--yellow);
+}
+.our-services .carousel .item-2 h3 {
+  color: var(--orange);
+}
+.our-services .carousel .item-2 p {
+  background-color: var(--orange);
+}
+/* item 3 */
+.our-services .carousel-inner.active-3 .carousel-control-next {
+  background-color: var(--fuchsia);
+  border-right: 0;
+}
+
+.our-services .carousel-inner.active-3 .carousel-control-prev {
+  border: 2px solid var(--orange);
+  background-color: var(--orange);
+  border-left: 0;
+}
+.our-services .carousel .item-3 h3 {
+  color: var(--red);
+  max-width: 400px;
+  text-align: right;
+}
+.our-services .carousel .item-3 p {
+  background-color: var(--red);
+}
+/* item 4 */
+.our-services .carousel-inner.active-4 .carousel-control-next {
+  border: 2px solid var(--fuchsia);
+  background-color: transparent;
+  border-right: 0;
+}
+
+.our-services .carousel-inner.active-4 .carousel-control-prev {
+  background-color: var(--red);
+  border-left: 0;
+}
+.our-services .carousel .item-4 h3 {
+  color: var(--fuchsia);
+}
+.our-services .carousel .item-4 p {
+  background-color: var(--fuchsia);
+}
+/* item 5 */
+.our-services .carousel-inner.active-5 .carousel-control-next {
+  background-color: var(--deepblue);
+  border-right: 0;
+}
+
+.our-services .carousel-inner.active-5 .carousel-control-prev {
+  border: 2px solid var(--purple);
+  background-color: transparent;
+  border-left: 0;
+}
+.our-services .carousel .item-5 h3 {
+  color: var(--purple);
+  max-width: 320px;
+  text-align: right;
+}
+.our-services .carousel .item-5 p {
+  background-color: var(--purple);
+}
+/* item 6 */
+.our-services .carousel-inner.active-6 .carousel-control-next {
+  border: 2px solid var(--deepblue);
+  background-color: transparent;
+  border-right: 0;
+}
+
+.our-services .carousel-inner.active-6 .carousel-control-prev {
+  background-color: var(--purple);
+  border-left: 0;
+}
+.our-services .carousel .item-6 h3 {
+  color: var(--deepblue);
+  max-width: 280px;
+}
+.our-services .carousel .item-6 p {
+  background-color: var(--deepblue);
+}
+/* item 7 */
+.our-services .carousel-inner.active-7 .carousel-control-next {
+  background-color: var(--yellowGreen);
+  border-right: 0;
+}
+
+.our-services .carousel-inner.active-7 .carousel-control-prev {
+  border: 2px solid var(--blue);
+  background-color: transparent;
+  border-left: 0;
+}
+.our-services .carousel .item-7 h3 {
+  color: var(--mintGreen);
+  max-width: 320px;
+  text-align: right;
+}
+.our-services .carousel .item-7 p {
+  background-color: var(--mintGreen);
+}
+/* item 8 */
+.our-services .carousel-inner.active-8 .carousel-control-next {
+  border: 2px solid var(--yellow);
+  background-color: transparent;
+  border-right: 0;
+}
+
+.our-services .carousel-inner.active-8 .carousel-control-prev {
+  background-color: var(--mintGreen);
+  border-left: 0;
+}
+.our-services .carousel .item-8 h3 {
+  color: var(--yellowGreen);
+}
+.our-services .carousel .item-8 p {
+  background-color: var(--yellowGreen);
+}
+/* Get in Touch */
+.get-in-touch .right-div p {
+  color: var(--white);
+  position: relative;
+  font-size: 1.3rem;
+  line-height: 1.3;
+  max-width: 440px;
+}
+.get-in-touch .right-div p span {
+  color: var(--deepblue);
+  font-weight: bold;
+}
+/* Why Choose Spectrum */
+.why-choose-spectrum .carousel .carousel-item.active {
+  display: flex;
+  align-items: center;
+}
+.why-choose-spectrum .carousel .carousel-item.active > div {
+  display: flex;
+  align-items: stretch !important;
+}
+.why-choose-spectrum .carousel .carousel-item > div {
+  display: none;
+  margin: auto;
+  width: calc(80% - 3rem);
+  color: var(--white);
+  padding: 0.5rem 5rem 0.5rem 0;
+  border-top-right-radius: 100px;
+  border-bottom-right-radius: 100px;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  font-size: 1.3rem;
+  position: relative;
+  height: fit-content;
+}
+.why-choose-spectrum .carousel-control-next,
+.why-choose-spectrum .carousel-control-prev {
+  height: fit-content;
+  min-height: 150px;
+  margin-top: auto;
+  margin-bottom: auto;
+  padding: 1rem;
+  opacity: 1;
+}
+.why-choose-spectrum .carousel .carousel-item .number {
+  border-radius: 50%;
+  background-color: var(--white);
+  width: 55px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: -27px;
+  top: 0;
+  bottom: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+  box-shadow: -6px 6px 7px -4px #434343;
+}
+
+.why-choose-spectrum .carousel .carousel-item {
+  min-height: 100vh;
+}
+.why-choose-spectrum .carousel .carousel-item p {
+  color: #313a49;
+  margin: auto;
+  font-size: 1.2rem;
+  line-height: 1.3;
+  padding: 1rem 0;
+}
+.why-choose-spectrum .carousel .carousel-item h3 {
+  color: var(--white);
+  margin: 0;
+  border-radius: 100px;
+  text-align: right;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+/* .item1 */
+.why-choose-spectrum .carousel .item-1 > div {
+  background-color: var(--yellow);
+  color: var(--mainColor);
+}
+.why-choose-spectrum .carousel .item-1 .number {
+  color: var(--yellow);
+  border: 5px solid var(--yellow);
+}
+.why-choose-spectrum .carousel .item-1 h3 {
+  background: linear-gradient(90deg, transparent 37%, #ffb703);
+}
+/* .item2 */
+.why-choose-spectrum .carousel .item-2 > div {
+  background-color: var(--orange);
+}
+.why-choose-spectrum .carousel .item-2 .number {
+  color: var(--orange);
+  border: 5px solid var(--orange);
+}
+.why-choose-spectrum .carousel .item-2 h3 {
+  background: linear-gradient(90deg, transparent 37%, #f57c00);
+  min-width: 270px;
+}
+/* .item3 */
+.why-choose-spectrum .carousel .item-3 > div {
+  background-color: var(--red);
+}
+.why-choose-spectrum .carousel .item-3 .number {
+  color: var(--red);
+  border: 5px solid var(--red);
+}
+.why-choose-spectrum .carousel .item-3 h3 {
+  background: linear-gradient(90deg, transparent 37%, #d32f2f);
+}
+/* .item4 */
+.why-choose-spectrum .carousel .item-4 > div {
+  background-color: var(--fuchsia);
+}
+.why-choose-spectrum .carousel .item-4 .number {
+  color: var(--fuchsia);
+  border: 5px solid var(--fuchsia);
+}
+.why-choose-spectrum .carousel .item-4 h3 {
+  background: linear-gradient(90deg, transparent 37%, #d81b60);
+}
+/* .item5 */
+.why-choose-spectrum .carousel .item-5 > div {
+  background-color: var(--purple);
+}
+.why-choose-spectrum .carousel .item-5 .number {
+  color: var(--purple);
+  border: 5px solid var(--purple);
+}
+.why-choose-spectrum .carousel .item-5 h3 {
+  background: linear-gradient(90deg, transparent 37%, #651258);
+}
+
+/* Our Clients */
+.our-clients .img-wrapper {
+  width: 200px;
+}
+.our-clients .row > div {
+  position: relative;
+}
+.our-clients .row > div::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: 1px;
+  height: 50px;
+  background: var(--mainColor);
+}
+
+/* Footer */
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  background-color: var(--mainColor);
+  z-index: 9;
+  overflow: hidden;
+}
+footer ul {
+  list-style-type: none;
+}
+footer ul li {
+  padding: 0.5rem 2rem;
+  border-left: 1px solid var(--blue);
+  border-right: 1px solid var(--blue);
+}
+footer ul li:nth-child(2) {
+  border-right: 0;
+  border-left: 0;
+}
+footer ul li:nth-child(3) {
+  border-right: 0;
+}
+footer ul li a {
+  color: var(--blue);
+}
+
+/* Loader */
+.loader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: var(--mainColor);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999999;
+}
+.dot {
+  width: 32px;
+  height: 50px;
+  border-radius: 15px;
+  animation: grow 2s infinite ease-in-out;
+}
+
+.dot:nth-child(1) {
+  background-color: var(--yellow);
+  animation-delay: 0s;
+}
+.dot:nth-child(2) {
+  background-color: var(--orange);
+  animation-delay: 0.25s;
+}
+.dot:nth-child(3) {
+  background-color: var(--red);
+  animation-delay: 0.5s;
+}
+.dot:nth-child(4) {
+  background-color: var(--fuchsia);
+  animation-delay: 0.75s;
+}
+.dot:nth-child(5) {
+  background-color: var(--purple);
+  animation-delay: 1s;
+}
+
+@keyframes grow {
+  0% {
+    height: 50px;
+  }
+  50% {
+    height: 250px;
+  }
+  100% {
+    height: 50px;
+  }
+}
+
+/* Media */
+@media (min-width: 992px) {
+  .col-lg-2-4 {
+    flex: 0 0 auto;
+    width: calc(100% / 5);
+  }
+  .our-clients .row > div::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 1px;
+    height: 50px;
+    background: var(--mainColor);
+  }
+  .our-clients .row > div:nth-child(5)::after,
+  .our-clients .row > div:nth-child(10)::after {
+    content: none;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .our-clients .row > div:nth-child(4)::after,
+  .our-clients .row > div:nth-child(8)::after,
+  .our-clients .row > div:nth-child(10)::after {
+    content: none;
+  }
+}
+@media screen and (max-width: 767px) {
+  .our-services .carousel .carousel-item p {
+    padding: 3rem 2rem;
+    border-radius: 2rem;
+  }
+  .why-choose-spectrum .min-h-100 {
+    min-height: auto;
+  }
+  .why-choose-spectrum .carousel .carousel-item.active > div {
+    flex-direction: column;
+    padding: 2rem;
+    border-radius: 2rem;
+  }
+  .why-choose-spectrum .carousel .carousel-item .number {
+    top: -50px;
+    left: -50px;
+    bottom: auto;
+  }
+  .why-choose-spectrum .carousel .item-2 h3 {
+    min-width: auto;
+  }
+  .why-choose-spectrum .carousel h3 {
+    text-align: left !important;
+    background: none !important;
+  }
+  footer ul {
+    flex-wrap: wrap;
+  }
+  footer ul li {
+    border: 0;
+    flex: 1 0 50%;
+  }
+  .our-clients .row > div .img-wrapper {
+    margin: 1rem auto;
+  }
+  .our-clients .row > div::after {
+    content: none;
+  }
+}

@@ -1,0 +1,27 @@
+@font-face {
+  font-family: "GE Inspira Book";
+  src: url("../fonts/GEInspiraBook-Book.eot");
+  src: local("GE Inspira Book Book"), local("GEInspiraBook-Book"),
+    url("../fonts/GEInspiraBook-Book.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/GEInspiraBook-Book.woff2") format("woff2"),
+    url("../fonts/GEInspiraBook-Book.woff") format("woff"),
+    url("../fonts/GEInspiraBook-Book.ttf") format("truetype"),
+    url("../fonts/GEInspiraBook-Book.svg#GEInspiraBook-Book") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "GE Inspira Book";
+  src: url("../fonts/GEInspiraBook-Bold.eot");
+  src: local("GE Inspira Book Bold"), local("GEInspiraBook-Bold"),
+    url("../fonts/GEInspiraBook-Bold.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/GEInspiraBook-Bold.woff2") format("woff2"),
+    url("../fonts/GEInspiraBook-Bold.woff") format("woff"),
+    url("../fonts/GEInspiraBook-Bold.ttf") format("truetype"),
+    url("../fonts/GEInspiraBook-Bold.svg#GEInspiraBook-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}

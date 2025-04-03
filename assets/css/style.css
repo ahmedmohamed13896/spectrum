@@ -362,6 +362,14 @@ h2.sec-title {
   color: var(--deepblue);
   font-weight: bold;
 }
+.get-in-touch .right-div p a {
+  color: var(--white);
+  position: relative;
+  font-size: 1.3rem;
+  line-height: 1.3;
+  max-width: 440px;
+  text-decoration: underline;
+}
 /* Why Choose Spectrum */
 .why-choose-spectrum .carousel .carousel-item.active {
   display: flex;
